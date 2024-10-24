@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Controllable Unlearning for Image-to-Image
+Generative Models via ε-Constrained Optimization</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/scholar?q=Xiaohua+Feng" target="_blank">Xiaohua Feng</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/scholar?q=Chaochao+Chen" target="_blank">Chaochao Chen</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/scholar?q=Yuyuan+Li" target="_blank">Yuyuan Li</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/scholar?q=Li+Zhang" target="_blank">Li Zhang</a><sup>*</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2408.01689v1.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                   
+
+               
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2408.01689>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+             While generative models have made significant advancements in recent years, they
+            also raise concerns such as privacy breaches and biases. Machine unlearning
+            has emerged as a viable solution, aiming to remove specific training data, e.g.,
+            containing private information and bias, from models. In this paper, we study the
+            machine unlearning problem in Image-to-Image (I2I) generative models. Previous
+            studies mainly treat it as a single objective optimization problem, offering a solitary
+            solution, thereby neglecting the varied user expectations towards the trade-off
+            between complete unlearning and model utility. To address this issue, we propose
+            a controllable unlearning framework that uses a control coefficient ε to control
+            the trade-off. We reformulate the I2I generative model unlearning problem into
+            a ε-constrained optimization problem and solve it with a gradient-based method
+            to find optimal solutions for unlearning boundaries. These boundaries define the
+            valid range for the control coefficient. Within this range, every yielded solution is
+            theoretically guaranteed with Pareto optimality. We also analyze the convergence
+            rate of our framework under various control functions. Extensive experiments
+            on two benchmark datasets across three mainstream I2I models demonstrate the
+            effectiveness of our controllable unlearning framework.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          An overview of controllable unlearning.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Pipeline of the controllable unlearning framework.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Results of center cropping 50% of the images and Generated images of cropping 50% at the center of the image on VQ-GAN.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Results of center cropping 50% of the images under different unlearning completeness.
+      </h2>
+   
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">T-SNE analysis between images generated by our method and ground truth images under
+different degrees of unlearning completeness</h2>
+   <iframe  src="static/pdfs/sample1.pdf" width="100%" height="550">     
+          </iframe>
+        
+      </div>
+ <div class="container">
+      <h2 class="title">The convergence rates under different control functions ψ(θ)</h2>
+   <iframe  src="static/pdfs/sample2.pdf" width="100%" height="550">     
+          </iframe>
+        
+
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{feng2024controllable,
+  title={Controllable Unlearning for Image-to-Image Generative Models via $\epsilon$-Constrained Optimization},
+  author={Feng, Xiaohua and Chen, Chaochao and Li, Yuyuan and Zhang, Li},
+  journal={arXiv preprint arXiv:2408.01689},
+  year={2024}
+}
+</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/your_repo_here">Template repository</a>. The template is provided under the <a href="https://github.com/your_repo_here/blob/master/LICENSE">Creative Commons</a> license.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!--StatCounter code-->
+<script type="text/javascript">
+var sc_project=PROJECT_NUMBER_HERE;
+var sc_invisible=1;
+var sc_security="SECURITY CODE HERE";
+var sc_https=1;
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/YOUR_PROJECT_NUMBER/0/YOUR_SECURITY_CODE/1/"
+alt="Web Analytics Made Easy -
+StatCounter"></a></div></noscript>
+<!--End of StatCounter Code-->
+</body>
+</html>
